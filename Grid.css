@@ -1,0 +1,37 @@
+
+#Grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 250px); 
+    grid-template-rows: repeat(5, 50%);
+    grid-gap: 100px;
+    margin: 100px;     
+}
+#Gold{
+    background-color: gold;
+    margin: 0;
+}
+#Purple{
+    background-color: purple;
+    margin: 0;
+    }
+#Orange{
+    background-color: orange;
+    margin: 0;
+}
+#Lemon{
+    background-color: orangered;
+    margin: 0;
+}
+#Green{
+    background-color: green;
+    font-size: 50px;
+    text-align: center;
+    color: snow;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+}
+/* img{
+    display: flex;
+    position:fixed;
+} */
