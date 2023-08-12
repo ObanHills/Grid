@@ -1,37 +1,232 @@
+body{
+    position:absolute;
+    margin: 50px;
+    bottom: 20%;
+    background-image: url(./9776521.png);
+    background-repeat: repeat-x;
+}
+img{
+    position: fixed;
+    margin:-50px;
+    background-size: 100% , 100%;
+
+}
+#Head{
+    color: white;
+    font-size: 45px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    text-shadow: black 10px 5px 10px;
+    letter-spacing: 10px;
+    
+    
+   }
+span{
+text-shadow: black 10px 5px 10px;
+color: rgb(235, 194, 62);
+}
 
 #Grid{
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(4, 250px); 
-    grid-template-rows: repeat(5, 50%);
-    grid-gap: 100px;
-    margin: 100px;     
+    height: 25vh;
+    grid-template-columns: repeat(3, 400px); 
+    grid-template-rows: repeat(6, 100%);
+    grid-gap: 20px;
+    box-sizing: border-box;
+       padding-left: 125px;
+
+  
 }
-#Gold{
+#Nav1{
+    background-color: rgb(207, 78, 78);
+    opacity: 0.9;
+    border-radius: 2px;
+
+
+}
+#Nav1:hover{
+    opacity: 0.5;
+    background-color: gray;
+    
+}
+#Nav1Home{
+position: relative;
+    font-size: 80px;
+    left: 150px;
+    top: 60px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0.5px 1px black;
+}
+#Nav1Home:hover{
+    color: rgb(228, 60, 205);
+}
+#Nav1Homep{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    left: 160px;
+    top: 30px;
+    font-family: 'Berkshire Swash', cursive;
+}
+#Nav2{
     background-color: gold;
-    margin: 0;
+    opacity: 0.9;
 }
-#Purple{
-    background-color: purple;
-    margin: 0;
-    }
-#Orange{
-    background-color: orange;
-    margin: 0;
+#Nav2:hover{
+    opacity: 0.5;
+    background-color: grey;
 }
-#Lemon{
+#Nav2Home{
+    position: relative;
+    font-size: 80px;
+    left: 150px;
+    top: 60px;
+}
+
+#Nav2Home:hover{
+    opacity: 0.5;
+}
+#Nav2Homep{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    left: 160px;
+    top: 30px;
+    font-family: 'Berkshire Swash', cursive;
+}
+#Nav3{
+    background-color:purple;
+    opacity: 0.8;
+}
+#Nav3:hover{
+    opacity: 0.9;
+    background-color: grey;
+}
+#Nav3Home{
+    position: relative;
+    font-size: 80px;
+    left: 150px;
+    top:60px;
+    color: white;
+}
+#Nav3Homep{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    left: 160px;
+    top: 30px;
+    font-family: 'Berkshire Swash', cursive;
+   
+}
+#Main-content{
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 1;
+    /* opacity: 1; */
+    width: 100%;
+    height: 200px;
+    background-size: 100% , 100%;
+    /* box-shadow: 1px 2px 10px 10px rgb(109, 90, 90); */
+    background-image: url(./landscape4.jpg);
+    animation-name: mySlides;
+    animation-duration: 9s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+@keyframes mySlides {
+    0%{background-image: url(./landscape3.jpg);}
+
+    35%{background-image: url(./landscape2.jpg);}
+    
+    75%{background-image: url(./landscape1.jpg);}
+}
+#myslides{
+    position:relative;
+    width: 50%;
+    left: 10px;
+    top: 30px;
+    display:contents;
+}
+#Aside{
     background-color: orangered;
-    margin: 0;
+    opacity: 0.8;
 }
-#Green{
-    background-color: green;
-    font-size: 50px;
+
+#Aside:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+#twitter{
+    position: relative;
+    font-size: 80px;
+    left: 70px;
+    top: 10px;
+}
+#twitter:hover{
+    color: rgb(44, 185, 228);
+}
+#facebook{
+    position: relative;
+    font-size: 80px;
+    left: 120px;
+    top: 10px;
+}
+#facebook:hover{
+    color: aqua;
+}
+#instagram{
+    position: relative;
+    font-size: 80px;
+    right: 90px;
+    top: 100px;
+}
+#instagram:hover{
+color: red;
+}
+#whatsapp{
+    position: relative;
+    font-size: 80px;
+    right: 30px;
+    top: 100px;
+}
+#whatsapp:hover{
+    color: green;
+}
+
+#footer{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    opacity: 0.8;
+    width: 100%;
+    height: 200px;
+    background-size: 100% , 100%;
+    /* box-shadow: 1px 2px 10px 10px rgb(109, 90, 90); */
+    background-image: url(./landscape4.jpg);
+    animation-name: slides;
+    animation-duration: 9s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+@keyframes slides {
+    0%{background-image: url(./1525675.jpg);}
+
+    35%{background-image: url(./4010569.jpg);}
+    
+    75%{background-image: url(./9776521.png);}
+}
+#footerp{
+    color: white;
+    font-size: 60px;
     text-align: center;
-    color: snow;
-    font-family: 'Kaushan Script', cursive;
-    margin: 0;
+
 }
-/* img{
-    display: flex;
-    position:fixed;
-} */
