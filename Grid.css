@@ -1,9 +1,8 @@
 body{
-    position:absolute;
-    margin: 50px;
-    bottom: 20%;
-    background-image: url(./9776521.png);
+    /* position:absolute; */
+      background-image: url(./9776521.png);
     background-repeat: repeat-x;
+    margin: 0px;
 }
 img{
     position: fixed;
@@ -31,11 +30,12 @@ color: rgb(235, 194, 62);
 #Grid{
     display: grid;
     height: 25vh;
-    grid-template-columns: repeat(3, 400px); 
+    grid-template-columns: repeat(3, 515px); 
     grid-template-rows: repeat(6, 100%);
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
     box-sizing: border-box;
-       padding-left: 125px;
+    
+    
 
   
 }
@@ -103,6 +103,7 @@ position: relative;
 #Nav3:hover{
     opacity: 0.9;
     background-color: grey;
+
 }
 #Nav3Home{
     position: relative;
@@ -125,7 +126,7 @@ position: relative;
     grid-column-start: 3;
     grid-column-end: 1;
     /* opacity: 1; */
-    width: 100%;
+    width: 200%;
     height: 200px;
     background-size: 100% , 100%;
     /* box-shadow: 1px 2px 10px 10px rgb(109, 90, 90); */
@@ -134,7 +135,7 @@ position: relative;
     animation-duration: 9s;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
-    left: 50%;
+    /* left: 0%; */
     top: 50%;
     transform: translate(-50% , -50%);
 }
@@ -205,7 +206,7 @@ color: red;
     grid-column-end: 4;
     opacity: 0.8;
     width: 100%;
-    height: 200px;
+    height: 200%;
     background-size: 100% , 100%;
     /* box-shadow: 1px 2px 10px 10px rgb(109, 90, 90); */
     background-image: url(./landscape4.jpg);
@@ -213,9 +214,10 @@ color: red;
     animation-duration: 9s;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
+    /* left: 50%; */
+    top: 100%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
+     transform: translate(-50% , -50%);
 }
 @keyframes slides {
     0%{background-image: url(./1525675.jpg);}
@@ -229,4 +231,9 @@ color: red;
     font-size: 60px;
     text-align: center;
 
+}
+h1{
+    position: relative;
+    color: white;
+    text-align: center;
 }
